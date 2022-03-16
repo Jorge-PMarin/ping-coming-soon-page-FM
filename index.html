@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6f46e4bbde.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="coming-page">
+      <header class="coming-page__header">
+        <a href="#" class="coming-page__logo">
+          <img src="./images/logo.svg" alt="Ping logo" />
+        </a>
+      </header>
+
+      <main>
+        <h1 class="coming-page__title">We are launching <span>soon!</span></h1>
+        <p class="coming-page__text">Subscribe and get notified</p>
+        <form class="coming-page__form">
+          <div>
+            <label for="coming-page__email">Email:</label>
+            <input
+              type="text"
+              id="coming-page__email"
+              class="coming-page__email"
+              placeholder="Your email address..."
+            />
+            <small>Please provide a valid address</small>
+          </div>
+          <button>Notify me</button>
+        </form>
+
+        <div class="coming-page__img">
+          <img
+            src="./images/illustration-dashboard.png"
+            alt=""
+            width="300"
+            aria-hidden="true"
+          />
+        </div>
+      </main>
+
+      <footer>
+        <ul class="coming-page__social">
+          <li class="coming-page__icon">
+            <a href="#" class="coming-page__facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="coming-page__icon">
+            <a href="#" class="coming-page__twitter"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="coming-page__icon">
+            <a href="#" class="coming-page__instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+        <small class="coming-page__copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Primary */
+  --blue: hsl(223, 87%, 63%);
+
+  /* Secondary */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  /* Neutral */
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.coming-page {
+  max-width: 90%;
+  margin: 4rem auto;
+}
+
+.coming-page__header {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.coming-page__logo img,
+.coming-page__img img {
+  display: block;
+  max-width: 100%;
+}
+
+.coming-page__logo img {
+  width: 7rem;
+}
+
+.coming-page__title {
+  font-size: 2.4rem;
+  color: var(--gray);
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.coming-page__title span {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+.coming-page__text {
+  font-size: 1.6rem;
+
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--very-dark-blue);
+}
+
+.coming-page__form {
+  margin-bottom: 7rem;
+  padding: 0 2.5rem;
+}
+
+.coming-page__form label {
+  display: none;
+}
+
+.coming-page__email {
+  width: 100%;
+  padding: 1.4rem 2rem;
+  border-radius: 10rem;
+  border: 0.1rem solid var(--pale-blue);
+  margin-bottom: 0.5rem;
+}
+
+.coming-page__email::placeholder {
+  color: var(--pale-blue);
+}
+
+.coming-page__form small {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--light-red);
+    margin-bottom: 3rem;
+}
+
+.coming-page__form button {
+  width: 100%;
+  padding: 1.4rem 0;
+  border: none;
+  border-radius: 10rem;
+  background-color: var(--blue);
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.coming-page__img {
+    margin-bottom: 13rem;
+}
+
+.coming-page__img img {
+  width: 100%;
+}
+
+.coming-page__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.coming-page__icon + .coming-page__icon {
+  margin-left: 3rem;
+}
+
+.coming-page__icon i {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.coming-page__copyright {
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--gray);
+}
