@@ -25,7 +25,7 @@ body {
 }
 
 .coming-page {
-  max-width: 90%;
+  max-width: 86%;
   margin: 4rem auto;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 .coming-page__form {
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   padding: 0 2.5rem;
 }
 
@@ -77,22 +77,30 @@ body {
 
 .coming-page__email {
   width: 100%;
-  padding: 1.4rem 2rem;
+  padding: 1.2rem 2rem;
   border-radius: 10rem;
   border: 0.1rem solid var(--pale-blue);
   margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--very-dark-blue);
+  font-family: inherit;
 }
 
 .coming-page__email::placeholder {
   color: var(--pale-blue);
 }
 
+.coming-page__email--active {
+  border: 0.1rem solid var(--light-red);
+}
+
 .coming-page__form small {
   display: block;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--light-red);
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .coming-page__form button {
@@ -103,12 +111,17 @@ body {
   background-color: var(--blue);
   font-family: inherit;
   font-size: 1.4rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-transform: capitalize;
+  cursor: pointer;
+}
+
+.coming-page__form button:hover {
+  background-color: hsl(223, 87%, 70%);
 }
 
 .coming-page__img {
-    margin-bottom: 13rem;
+  margin-bottom: 13rem;
 }
 
 .coming-page__img img {
@@ -125,9 +138,29 @@ body {
   margin-left: 3rem;
 }
 
-.coming-page__icon i {
+.coming-page__icon {
   color: var(--blue);
   cursor: pointer;
+  font-size: 1.6rem;
+  text-decoration: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 0.5rem 0 0.5rem;
+  transition: background-color 0.5s ease;
+}
+
+.coming-page__icon::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.coming-page__icon:hover {
+  background-color: var(--blue);
+  color: #fff;
 }
 
 .coming-page__copyright {
@@ -135,4 +168,45 @@ body {
   font-size: 1.4rem;
   text-align: center;
   color: var(--gray);
+}
+
+@media (min-width: 576px) {
+  .coming-page {
+    max-width: 50rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .coming-page {
+    max-width: 70rem;
+  }
+
+  .coming-page__title {
+    font-size: 5.2rem;
+  }
+
+  .coming-page__text {
+    font-size: 2rem;
+  }
+
+  .coming-page__form {
+    display: flex;
+  }
+
+  .coming-page__group {
+    flex: 2;
+  }
+
+  .coming-page__form button {
+    flex: 1;
+    align-self: flex-start;
+    height: 4.8rem;
+    margin-left: 1.5rem;
+  }
+
+  .coming-page__form small {
+    text-align: left;
+    margin-left: 2.5rem;
+  }
+
 }
